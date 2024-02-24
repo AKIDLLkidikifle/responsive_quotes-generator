@@ -1,7 +1,7 @@
 
 const apiurl = "https://api.quotable.io/random";
 
-async function getJock(){
+async function getQuotes(){
     const response = await fetch(apiurl);
     var data = await response.json();
 
@@ -13,5 +13,5 @@ async function getJock(){
 }
 
 document.querySelector("button").addEventListener("click", function(){
-    getJock();
+    getQuotes();
 })
